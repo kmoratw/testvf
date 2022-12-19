@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: "test"
+  description: "test"
+spec:
+  type: openapi
+  lifecycle: production
+  owner:  "platform-dx"
+  definition:
+    $text: https://github.com/platform-dx/testvf/blob/main/open-api.yaml

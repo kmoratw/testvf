@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "test"
+  description: "test"
+  links:
+    - url: https://api-test-vodafoneziggo.empcbr.thoughtworks-labs.net/api
+      title: test
+      icon: dashboard
+  annotations:
+    circleci.com/project-slug: github/platform-dx/testvf
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug:  platform-dx/testvf
+    sonarqube.org/project-key: "test"
+    backstage.io/kubernetes-label-selector: "app=test"
+    backstage.io/adr-location: docs/adrs/
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "platform-dx"
+  providesApis:
+    - "test"
